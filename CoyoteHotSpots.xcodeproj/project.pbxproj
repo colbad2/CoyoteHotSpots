@@ -12,12 +12,12 @@
 		A2257AC81EED024D0085DA46 /* HotSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC71EED024D0085DA46 /* HotSpot.swift */; };
 		A2257ACA1EED04630085DA46 /* Segmenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC91EED04630085DA46 /* Segmenter.swift */; };
 		A2257ACC1EED04D50085DA46 /* Night.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257ACB1EED04D50085DA46 /* Night.swift */; };
+		A24F2F3B1EEEFE1B001437AB /* SunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24F2F3A1EEEFE1B001437AB /* SunModel.swift */; };
+		A24F2F3C1EEF096E001437AB /* SunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24F2F3A1EEEFE1B001437AB /* SunModel.swift */; };
 		A2785F921EED8F7F00D17DE7 /* SegmenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2785F911EED8F7F00D17DE7 /* SegmenterTests.swift */; };
 		A2785F971EED910F00D17DE7 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC51EED01CD0085DA46 /* Fix.swift */; };
 		A2785F981EED911400D17DE7 /* Segmenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC91EED04630085DA46 /* Segmenter.swift */; };
 		A2785F991EED911D00D17DE7 /* Night.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257ACB1EED04D50085DA46 /* Night.swift */; };
-		A2785F9A1EED913000D17DE7 /* SunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7EC1A1EED05E000845953 /* SunModel.swift */; };
-		A2D7EC1B1EED05E000845953 /* SunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7EC1A1EED05E000845953 /* SunModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,10 +40,10 @@
 		A2257AC91EED04630085DA46 /* Segmenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segmenter.swift; sourceTree = "<group>"; };
 		A2257ACB1EED04D50085DA46 /* Night.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night.swift; sourceTree = "<group>"; };
 		A24F2F361EEDA0E6001437AB /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		A24F2F3A1EEEFE1B001437AB /* SunModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunModel.swift; sourceTree = "<group>"; };
 		A2785F8F1EED8F7F00D17DE7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2785F911EED8F7F00D17DE7 /* SegmenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmenterTests.swift; sourceTree = "<group>"; };
 		A2785F931EED8F7F00D17DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2D7EC1A1EED05E000845953 /* SunModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SunModel.swift; path = ../../../TrackersDesktop/TrackersDesktop/TrackersDesktop/SunModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				A2257ABE1EED01BA0085DA46 /* main.swift */,
-				A2D7EC1A1EED05E000845953 /* SunModel.swift */,
 				A2257AC51EED01CD0085DA46 /* Fix.swift */,
+				A24F2F3A1EEEFE1B001437AB /* SunModel.swift */,
 				A2257AC71EED024D0085DA46 /* HotSpot.swift */,
 				A2257AC91EED04630085DA46 /* Segmenter.swift */,
 				A2257ACB1EED04D50085DA46 /* Night.swift */,
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2D7EC1B1EED05E000845953 /* SunModel.swift in Sources */,
+				A24F2F3B1EEEFE1B001437AB /* SunModel.swift in Sources */,
 				A2257ACA1EED04630085DA46 /* Segmenter.swift in Sources */,
 				A2257ACC1EED04D50085DA46 /* Night.swift in Sources */,
 				A2257ABF1EED01BA0085DA46 /* main.swift in Sources */,
@@ -209,7 +209,7 @@
 				A2785F991EED911D00D17DE7 /* Night.swift in Sources */,
 				A2785F981EED911400D17DE7 /* Segmenter.swift in Sources */,
 				A2785F921EED8F7F00D17DE7 /* SegmenterTests.swift in Sources */,
-				A2785F9A1EED913000D17DE7 /* SunModel.swift in Sources */,
+				A24F2F3C1EEF096E001437AB /* SunModel.swift in Sources */,
 				A2785F971EED910F00D17DE7 /* Fix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

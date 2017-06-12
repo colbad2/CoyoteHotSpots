@@ -29,7 +29,7 @@ class SegmenterTests: XCTestCase
       XCTAssertNotNil( nights )
       XCTAssertEqual( nights.count, 1 )
       XCTAssertEqual( nights.first!.previousSunset, fix.previousSunset )
-      XCTAssertEqual( fix.previousSunset, formatterZ.date( from: "2016/10/08 07:14:28 +0000" )! )
+      XCTAssertEqual( fix.previousSunset, formatterZ.date( from: "2016/10/08 22:30:41 +0000" )! )
    }
 
    func testTwoFixList()
@@ -41,18 +41,18 @@ class SegmenterTests: XCTestCase
       XCTAssertNotNil( nights )
       XCTAssertEqual( nights.count, 1 )
       XCTAssertEqual( nights.first!.previousSunset, fix.previousSunset )
-      XCTAssertEqual( fix.previousSunset, formatterZ.date( from: "2016/10/08 07:14:28 +0000" )! )
+      XCTAssertEqual( fix.previousSunset, formatterZ.date( from: "2016/10/08 22:30:41 +0000" )! )
       XCTAssertEqual( nights.first!.previousSunset, fix2.previousSunset )
-      XCTAssertEqual( fix2.previousSunset, formatterZ.date( from: "2016/10/08 07:14:28 +0000" )! )
+      XCTAssertEqual( fix2.previousSunset, formatterZ.date( from: "2016/10/08 22:30:41 +0000" )! )
    }
 
    func testFixMidnights()
    {
-      compareMidnight( date: "2016/10/08 00:00:00 -0400", previousSunset: "2016/10/07 22:28:37 +0000" )
-      compareMidnight( date: "2016/10/08 01:00:00 -0400", previousSunset: "2016/10/07 22:28:37 +0000" )
-      compareMidnight( date: "2016/10/08 12:00:00 -0400", previousSunset: "2016/10/07 22:28:37 +0000" )
-      compareMidnight( date: "2016/10/08 22:00:00 -0400", previousSunset: "2016/10/08 22:26:48 +0000" )
-      compareMidnight( date: "2016/10/08 23:00:00 -0400", previousSunset: "2016/10/08 22:26:48 +0000" )
+      compareMidnight( date: "2016/10/08 00:00:00 -0400", previousSunset: "2016/10/07 22:32:15 +0000" )
+      compareMidnight( date: "2016/10/08 01:00:00 -0400", previousSunset: "2016/10/07 22:32:15 +0000" )
+      compareMidnight( date: "2016/10/08 12:00:00 -0400", previousSunset: "2016/10/07 22:32:15 +0000" )
+      compareMidnight( date: "2016/10/08 22:00:00 -0400", previousSunset: "2016/10/08 22:30:41 +0000" )
+      compareMidnight( date: "2016/10/08 23:00:00 -0400", previousSunset: "2016/10/08 22:30:41 +0000" )
    }
 
    func compareMidnight( date: String, previousSunset: String )
@@ -72,8 +72,8 @@ class SegmenterTests: XCTestCase
       XCTAssertNotNil( nights )
       XCTAssertEqual( nights.count, 2 )
       XCTAssertEqual( nights[ 0 ].previousSunset, fix.previousSunset )
-      XCTAssertEqual( fix.previousSunset, formatterZ.date( from: "2016/10/08 07:14:28 +0000" )! )
+      XCTAssertEqual( fix.previousSunset, formatterZ.date( from: "2016/10/08 22:30:41 +0000" )! )
       XCTAssertEqual( nights[ 1 ].previousSunset, fix2.previousSunset )
-      XCTAssertEqual( fix2.previousSunset, formatterZ.date( from: "2016/10/18 07:17:43 +0000" )! )
+      XCTAssertEqual( fix2.previousSunset, formatterZ.date( from: "2016/10/18 22:15:42 +0000" )! )
    }
 }

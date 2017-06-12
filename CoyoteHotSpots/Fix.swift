@@ -26,29 +26,28 @@ class Fix
       var minusOneDay = DateComponents()
       minusOneDay.day = -1
 
-         sunModel.set( date: date, latLon: latLon )
-         isDaytime = sunModel.isDaytime
-         let dSunset = sunModel.sunset
-         let previousDay = (cal as NSCalendar).date( byAdding: minusOneDay, to: date, options: NSCalendar.Options( rawValue: 0 ) )!
-         sunModel.set( date: previousDay, latLon: latLon )
-         let pSunset = sunModel.sunset
-         let nextDay = (cal as NSCalendar).date( byAdding: oneDay, to: date, options: NSCalendar.Options( rawValue: 0 ) )!
-         sunModel.set( date: nextDay, latLon: latLon )
-         let nSunset = sunModel.sunset
+      sunModel.set( date: date, latLon: latLon )
+      isDaytime = sunModel.isDaytime
+      let dSunset = sunModel.sunset
+      let previousDay = (cal as NSCalendar).date( byAdding: minusOneDay, to: date, options: NSCalendar.Options( rawValue: 0 ) )!
+      sunModel.set( date: previousDay, latLon: latLon )
+      let pSunset = sunModel.sunset
+      let nextDay = (cal as NSCalendar).date( byAdding: oneDay, to: date, options: NSCalendar.Options( rawValue: 0 ) )!
+      sunModel.set( date: nextDay, latLon: latLon )
+      let nSunset = sunModel.sunset
 
-         if date < dSunset!
-         {
-            previousSunset = pSunset
-         }
-         else if date < nSunset!
-         {
-            previousSunset = dSunset
-         }
-         else
-         {
-            previousSunset = nSunset
-         }
-      
+      if date < dSunset!
+      {
+         previousSunset = pSunset
+      }
+      else if date < nSunset!
+      {
+         previousSunset = dSunset
+      }
+      else
+      {
+         previousSunset = nSunset
+      }
    }
 }
 
