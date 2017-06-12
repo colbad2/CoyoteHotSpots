@@ -2,8 +2,8 @@
 
 import Foundation
 
-struct Night
+class Night
 {
    var fixes = [ Fix ]()
-   var midnight: Date?
+   var previousSunset: Date?
 }

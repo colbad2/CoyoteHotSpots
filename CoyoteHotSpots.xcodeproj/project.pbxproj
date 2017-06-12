@@ -12,7 +12,6 @@
 		A2257AC81EED024D0085DA46 /* HotSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC71EED024D0085DA46 /* HotSpot.swift */; };
 		A2257ACA1EED04630085DA46 /* Segmenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC91EED04630085DA46 /* Segmenter.swift */; };
 		A2257ACC1EED04D50085DA46 /* Night.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257ACB1EED04D50085DA46 /* Night.swift */; };
-		A24F2F371EEDA0E6001437AB /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = A24F2F361EEDA0E6001437AB /* readme.md */; };
 		A2785F921EED8F7F00D17DE7 /* SegmenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2785F911EED8F7F00D17DE7 /* SegmenterTests.swift */; };
 		A2785F971EED910F00D17DE7 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC51EED01CD0085DA46 /* Fix.swift */; };
 		A2785F981EED911400D17DE7 /* Segmenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2257AC91EED04630085DA46 /* Segmenter.swift */; };
@@ -198,7 +197,6 @@
 				A2257ACA1EED04630085DA46 /* Segmenter.swift in Sources */,
 				A2257ACC1EED04D50085DA46 /* Night.swift in Sources */,
 				A2257ABF1EED01BA0085DA46 /* main.swift in Sources */,
-				A24F2F371EEDA0E6001437AB /* readme.md in Sources */,
 				A2257AC61EED01CD0085DA46 /* Fix.swift in Sources */,
 				A2257AC81EED024D0085DA46 /* HotSpot.swift in Sources */,
 			);
